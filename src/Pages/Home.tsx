@@ -13,8 +13,7 @@ const Home = () => {
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">Hi, I'm Scott</h2>
           <p className="text-lg">
-            I'm a passionate developer and photographer, creating beautiful
-            experiences through code and capturing moments through my lens.
+            I'm a passionate developer, specializing in web development with a focus on creating beautiful and functional web experiences. I enjoy C# and video game development with frameworks like MonoGame, and also enjoy capturing surreal moments with my aerial photography. 
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
@@ -25,7 +24,7 @@ const Home = () => {
           </motion.button>
         </div>
         <div className="relative h-64 md:h-full">
-          {/* You can add your profile image here */}
+          <img src="/src/assets/marsh.jpg" alt="Scott Saller" className="w-full h-full object-cover rounded-lg" />
           <div className="absolute inset-0 bg-primary opacity-10 rounded-lg"></div>
         </div>
       </div>

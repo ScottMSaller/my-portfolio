@@ -40,7 +40,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           ${isNavOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}
       >
         <div className="p-6 pt-16 md:pt-6">
-          <h1 className="text-2xl font-bold mb-8">Scott's Portfolio</h1>
+          <h1 className="text-2xl font-bold mb-8">Scott Saller</h1>
           <div className="space-y-2">
             {navLinks.map((link) => (
               <Link
