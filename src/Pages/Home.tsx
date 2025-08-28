@@ -9,7 +9,7 @@ const Home = () => {
       className="section-container"
     >
       <h1 className="page-title">Welcome to My Portfolio</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 xl2:grid-cols-2 gap-8">
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">Hi, I'm Scott</h2>
           <p className="text-lg">
@@ -23,8 +23,12 @@ const Home = () => {
             Explore My Work
           </motion.button>
         </div>
-        <div className="relative h-64 md:h-full">
-          <img src="/src/assets/marsh.jpg" alt="Scott Saller" className="w-full h-full object-cover rounded-lg" />
+        <div className="relative aspect-[4/3] w-70 h-70">
+          <img 
+            src="/src/assets/marsh.jpg" 
+            alt="Scott Saller" 
+            className="absolute inset-0 w-full h-full object-contain rounded-lg"
+          />
           <div className="absolute inset-0 bg-primary opacity-10 rounded-lg"></div>
         </div>
       </div>

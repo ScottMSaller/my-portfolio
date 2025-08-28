@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -10,6 +10,9 @@ module.exports = {
         primary: '#000000',
         secondary: '#FFFFFF',
         accent: '#333333',
+      },
+      screens: {
+        'xl2': '1618px',
       },
     },
   },
