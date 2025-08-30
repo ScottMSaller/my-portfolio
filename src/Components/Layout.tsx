@@ -40,8 +40,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           ${isNavOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}
       >
         <div className="p-6 pt-16 md:pt-6">
-          <h1 className="text-2xl font-bold mb-8">Scott M Saller</h1>
-          <div className="space-y-2">
+          <h1 className="text-2xl font-bold mb-1">Scott M Saller</h1>
+          <p className="text-xs">Software Developer | Game Dev |</p>
+          <p className="text-xs mb-6"> Photographer</p>
+          <div className="space-y-8">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -55,6 +57,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             ))}
           </div>
         </div>
+        <footer className="text-center text-xs absolute bottom-0 left-0 right-0 pb-4">
+            <img src="src/assets/envelope.svg" className="inline-block w-7 h-7 mx-3 hover:scale-125 transition-transform duration-300 cursor-pointer"/>
+            <img src="src/assets/github.svg" className="inline-block w-7 h-7 mx-3 hover:scale-125 transition-transform duration-300 cursor-pointer"/>
+            <img src="src/assets/linkedin.svg" className="inline-block w-7 h-7 mx-3 hover:scale-125 transition-transform duration-300 cursor-pointer"/>
+        </footer>
       </nav>
 
       {/* Mobile Nav Overlay */}
